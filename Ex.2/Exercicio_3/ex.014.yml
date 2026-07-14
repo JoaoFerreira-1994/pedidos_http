@@ -1,0 +1,21 @@
+info:
+  name: ex.014
+  type: http
+
+http:
+  method: GET
+  url: https://rickandmortyapi.com/api/character?gender=female&status=alive
+  params:
+    - name: gender
+      value: female
+      type: query
+    - name: status
+      value: alive
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

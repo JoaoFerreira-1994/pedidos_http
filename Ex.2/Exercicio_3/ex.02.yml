@@ -1,0 +1,14 @@
+info:
+  name: ex.02
+  type: http
+
+http:
+  method: GET
+  url: https://jsonplaceholder.typicode.com/posts
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

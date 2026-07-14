@@ -1,0 +1,18 @@
+info:
+  name: ex.028
+  type: http
+
+http:
+  method: GET
+  url: https://pokeapi.co/api/v2/ability/battle-armor?language
+  params:
+    - name: language
+      value: ""
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

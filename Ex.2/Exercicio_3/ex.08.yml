@@ -1,0 +1,27 @@
+info:
+  name: ex.08
+  type: http
+
+http:
+  method: PUT
+  url: https://jsonplaceholder.typicode.com/posts/1?"id"=1,&"title"="Título atualizado",&"body"="Conteúdo atualizado",&"userId"=1
+  params:
+    - name: '"id"'
+      value: 1,
+      type: query
+    - name: '"title"'
+      value: '"Título atualizado",'
+      type: query
+    - name: '"body"'
+      value: '"Conteúdo atualizado",'
+      type: query
+    - name: '"userId"'
+      value: "1"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

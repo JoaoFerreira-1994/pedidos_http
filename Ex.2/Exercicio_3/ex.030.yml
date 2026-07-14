@@ -1,0 +1,14 @@
+info:
+  name: ex.030
+  type: http
+
+http:
+  method: GET
+  url: https://pokeapi.co/api/v2/evolution-chain/10/
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

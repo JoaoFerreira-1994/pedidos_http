@@ -1,0 +1,21 @@
+info:
+  name: ex.012
+  type: http
+
+http:
+  method: GET
+  url: https://rickandmortyapi.com/api/character?name=rick&status=dead
+  params:
+    - name: name
+      value: rick
+      type: query
+    - name: status
+      value: dead
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

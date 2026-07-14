@@ -1,0 +1,14 @@
+info:
+  name: ex.027
+  type: http
+
+http:
+  method: GET
+  url: https://pokeapi.co/api/v2/ability/chlorophyll
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,21 @@
+info:
+  name: ex.05
+  type: http
+
+http:
+  method: POST
+  url: https://jsonplaceholder.typicode.com/posts?UserId=1&title=Novo post
+  params:
+    - name: UserId
+      value: "1"
+      type: query
+    - name: title
+      value: Novo post
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
